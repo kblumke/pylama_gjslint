@@ -1,7 +1,7 @@
 Pylama_gjslint
 #############
 
-pylama_gjslint -- Support gjslint in Pylama_.
+pylama_gjslint -- Support gjslint for Pylama (https://github.com/klen/pylama).
 
 .. contents::
 
