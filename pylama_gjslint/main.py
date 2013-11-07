@@ -1,10 +1,10 @@
 from os import path as op, environ
 
-from pylama.lint import Linter as BaseLinter # noqa
+from pylama import lint
 
 
-class Linter(BaseLinter):
-
+class Linter(lint.Linter):
+    
     """ Check code with gjlint. """
 
     def allow(self, path):
