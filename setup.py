@@ -12,7 +12,7 @@ pylama_gjslint -- gjslint integration to pylama library.
 from os import path as op
 
 from setuptools import setup, find_packages
-from pylama_gjslint import __version__, __project__, __author__, __license__
+from pylama_gjslint import __version__, __project__, __license__
 
 
 def read(fname):
