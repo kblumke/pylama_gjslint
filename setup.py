@@ -12,6 +12,8 @@ pylama_gjslint -- gjslint integration to pylama library.
 from os import path as op
 
 from setuptools import setup, find_packages
+from pylama_gjslint import __version__, __project__, __author__, __license__
+
 
 def read(fname):
     try:
@@ -20,13 +22,12 @@ def read(fname):
         return ''
 
 setup(
-    name='pylama_gjslint',
-    version='0.0.1',
-    license='BSD',
+    name=__project__,
+    version=__version__,
+    license=__license__,
     description=read('DESCRIPTION'),
     long_description=read('README.rst'),
     platforms=('Any'),
-
     author='trojkat',
     author_email='tomasz@karbownicki.com',
     url='http://github.com/trojkat/pylama_gjslint',

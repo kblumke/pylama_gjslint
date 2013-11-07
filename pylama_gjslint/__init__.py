@@ -4,9 +4,8 @@
 # ==================
 
 
-__version__ = '0.0.1'
+__version__ = '0.0.2'
 __project__ = 'pylama_gjslint'
-__author__ = "trojkat <tomasz@karbownicki.com>"
 __license__ = "BSD"
 
 from .main import Linter
