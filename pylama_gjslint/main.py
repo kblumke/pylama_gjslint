@@ -1,17 +1,15 @@
-from os import path as op, environ
-
 from pylama import lint
 
 
 class Linter(lint.Linter):
-    
+
     """ Check code with gjlint. """
 
     def allow(self, path):
         return path.endswith('.js')
 
     @staticmethod
-    def run(path, **meta): # noqa
+    def run(path, **meta):  # noqa
         """ gjlint code checking.
 
         :return list: List of errors.
@@ -28,10 +26,10 @@ class Linter(lint.Linter):
             matchErrStr = re.match(regExErrStr, record.error_string)
             if matchErrStr:
                 errors.append(dict(
-                  type=matchErrStr.group(2),
-                  lnum=matchErrStr.group(1),
-                  # due to errors filtering type is combined with the text
-                  text=" ".join([matchErrStr.group(2), matchErrStr.group(3)])
-                  ))
+                    type=matchErrStr.group(2),
+                    lnum=matchErrStr.group(1),
+                    # due to errors filtering type is combined with the text
+                    text=" ".join([matchErrStr.group(2), matchErrStr.group(3)])
+                ))
 
         return errors
