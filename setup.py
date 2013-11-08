@@ -12,7 +12,6 @@ pylama_gjslint -- gjslint integration to pylama library.
 from os import path as op
 
 from setuptools import setup, find_packages
-from pylama_gjslint import __version__, __project__, __license__
 
 
 def read(fname):
@@ -22,9 +21,9 @@ def read(fname):
         return ''
 
 setup(
-    name=__project__,
-    version=__version__,
-    license=__license__,
+    name='pylama_gjslint',
+    version='0.0.6',
+    license='BSD',
     description=read('DESCRIPTION'),
     long_description=read('README.rst'),
     platforms=('Any'),

@@ -15,7 +15,7 @@ class Linter(lint.Linter):
         :return list: List of errors.
 
         """
-        from closure_linter import gjslint
+        from .closure_linter import gjslint
 
         errors = []
         records_iter = gjslint.main(["", path])
