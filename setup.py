@@ -22,7 +22,7 @@ def read(fname):
 
 setup(
     name='pylama_gjslint',
-    version='0.0.7',
+    version='0.0.8',
     license='BSD',
     description=read('DESCRIPTION'),
     long_description=read('README.rst'),
